@@ -630,15 +630,33 @@ section{
 
 @media (max-width: 768px) {
 
+    .container{
+        padding: 0 20px;
+    }
+
     .header .container{
         flex-direction: column;
         gap: 20px;
+        text-align: center;
+    }
+
+    .logo{
+        font-size: 28px;
     }
 
     .nav{
-        gap: 20px;
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 18px;
+    }
+
+    .button{
+        padding: 13px 22px;
+    }
+
+    .hero{
+        padding: 70px 0;
     }
 
     .hero-content{
@@ -647,51 +665,123 @@ section{
         gap: 50px;
     }
 
+    .hero-text{
+        max-width: 100%;
+    }
+
     .hero-text h1{
-        font-size: 46px;
+        font-size: 42px;
+        line-height: 1.15;
+    }
+
+    .hero-text p{
+        font-size: 18px;
     }
 
     .hero-image{
-        width: 320px;
-        height: 320px;
+        width: 280px;
+        height: 280px;
     }
 
-    .feature-cards,
-    .reviews-grid,
-    .footer-content{
+    .features,
+    .steps,
+    .reviews,
+    .contact,
+    .faq{
+        padding: 80px 0;
+    }
+
+    .features h2,
+    .steps h2,
+    .reviews h2,
+    .contact-info h2,
+    .faq h2{
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .section-text{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .feature-cards{
         flex-direction: column;
+        gap: 25px;
+    }
+
+    .card{
+        width: 100%;
+        min-height: auto;
+        padding: 36px 28px;
     }
 
     .steps-line{
         flex-direction: column;
-        gap: 40px;
+        align-items: center;
+        gap: 55px;
+        margin-top: 60px;
+    }
+
+    .steps-line::before{
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: auto;
+        width: 2px;
+        height: 100%;
+        transform: translateX(-50%);
+    }
+
+    .step{
+        width: 100%;
+        max-width: 320px;
+        background: #f8fcf7;
+        padding: 10px 0;
+    }
+
+    .review-cards{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .review-card{
+        width: 100%;
     }
 
     .contact-content{
         flex-direction: column;
-        gap: 40px;
+        gap: 50px;
+        text-align: center;
     }
 
-    .contact-form,
+    .contact-info p{
+        font-size: 18px;
+    }
+
     .contact-image{
-        width: 100%;
+        width: 280px;
+        height: 280px;
+        font-size: 140px;
     }
 
-    .faq-item{
-        margin: 20px 0;}
-    .review-cards{
-    flex-direction: column;
-    gap: 25px;
-}
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+    }
 
-.review-card{
-    width: 100%;
-}
+    .footer-links{
+        align-items: center;
+    }
 
-.footer-content{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-}
+    #topBtn{
+        width: 48px;
+        height: 48px;
+        right: 18px;
+        bottom: 18px;
+        font-size: 22px;
+    }
 }
